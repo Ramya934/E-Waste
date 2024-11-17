@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Waste Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(images/background.jpeg);
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            height: 550px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #af1cc6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #af1cc6;
+        }
+    </style>
+</head>
+<body>
+    <h2>e-Waste Registration Form</h2>
+    <form action="thanku.html" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="device">E-waste Types:</label><br><br>
+        <select name="" id="">
+            <option value="mobile">Mobile</option>
+            <option value="laptop">Laptop</option>
+            <option value="fridge">Fridge</option>
+            <option value="washingmac">Washing Machine</option>
+            <option value="mixer">Mixer</option>
+            <option value="grinder">Grinder</option>
+            <option value="microoven">Micro Oven</option>
+            <option value="vaccum">Vaccum Cleaner</option>
+            <option value="other">Others</option>
+          </select><br><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br>
+        <label for="device">State:</label><br><br>
+        <select name="" id="">
+            <option value="mobile">Tamil Nadu</option>
+        </select>   <br><br> 
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="image">Upload Image:</label><br><br>
+        <input type="file" id="image" name="images[]" accept="image/*" multiple required><br>
+
+        <input type="submit" value="Submit">
+     </form>
+</body>
+</html>
+ 
+  
